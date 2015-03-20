@@ -17,8 +17,6 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 
@@ -38,10 +36,10 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
         switch(item.getItemId()) {
             case R.id.action_search:
-                openSearch();
+               // openSearch();
                 return true;
             case R.id.action_settings:
-                openSettings();
+               // openSettings();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
